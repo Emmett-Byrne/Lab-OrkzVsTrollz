@@ -17,7 +17,7 @@ public:
 
 Troll::Troll()
 {
-	baseDamage = 10;
-	health = 100;
-	isOrk = false;
+	m_baseDamage = 10;
+	m_health = 100;
+	m_isOrk = false;
 }

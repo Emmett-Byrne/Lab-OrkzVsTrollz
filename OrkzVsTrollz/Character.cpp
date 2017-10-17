@@ -2,55 +2,55 @@
 
 int Character::getDamage()
 {
-	return baseDamage;
+	return m_baseDamage;
 }
 
 int Character::getHealth()
 {
-	return health;
+	return m_health;
 }
 
 int Character::getAttackType()
 {
-	return attackType;
+	return m_attackType;
 }
 
 int Character::getAttackSpeed()
 {
-	return attackSpeed;
+	return m_attackSpeed;
 }
 
 int Character::getShieldType()
 {
-	return shieldType;
+	return m_shieldType;
 }
 
 bool Character::getType()
 {
-	return isOrk;
+	return m_isOrk;
 }
 
 void Character::setAttackType(int i)
 {
-	attackType = i;
+	m_attackType = i;
 }
 
 void Character::setAttackSpeed(int i)
 {
-	attackSpeed = i;
+	m_attackSpeed = i;
 }
 
 void Character::setshieldType(int i)
 {
-	shieldType = i;
+	m_shieldType = i;
 }
 
 void Character::dealDamge(int i)
 {
-	health -= i;
+	m_health -= i;
 }
 
 void Character::addHP(int i)
 {
-	health += i;
+	m_health += i;
 }

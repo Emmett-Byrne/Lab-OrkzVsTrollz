@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Spell.h"
 
 class Character {
 public:
@@ -17,11 +17,11 @@ public:
 	virtual void addHP(int i);
 
 	//probably should update to use enums
-	int baseDamage;
-	int health;
-	int attackType;
-	int attackSpeed;
-	int shieldType;
-	bool isOrk;
+	int m_baseDamage;
+	int m_health;
+	int m_attackType;
+	int m_attackSpeed;
+	int m_shieldType;
+	bool m_isOrk;
 	Spell* spells[3];
 };

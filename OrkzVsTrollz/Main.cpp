@@ -1,6 +1,6 @@
 #include <iostream>
+#include "spell.h"
 #include "Character.h"
-#include "Spell.h"
 #include "Ork.h"
 #include "Troll.h"
 #include "Regenerate.h"
@@ -148,7 +148,7 @@ void damageRound1(Character * ork, Character * troll)
 {
 	cout << "DAMAGE ROUND 1: FAST ATTACKS" << endl;
 
-	if (ork->attackSpeed == 1)
+	if (ork->getAttackSpeed() == 1)
 	{
 		int damage = ork->getDamage() * 0.75;
 		if (troll->getShieldType() == ork->getAttackType())
@@ -160,7 +160,7 @@ void damageRound1(Character * ork, Character * troll)
 		std::cout << "The ork quickly makes it's attack on the Troll and deals " << damage << " damage." << std::endl;
 	}
 
-	if (troll->attackSpeed == 1)
+	if (troll->getAttackSpeed() == 1)
 	{
 		int damage = troll->getDamage() * 0.75;
 		if (ork->getShieldType() == troll->getAttackType())
@@ -172,7 +172,7 @@ void damageRound1(Character * ork, Character * troll)
 		std::cout << "The Troll quickly makes it's attack on the ork and deals " << damage << " damage." << std::endl;
 	}
 
-	if (ork->attackSpeed != 1 && troll->attackSpeed != 1)
+	if (ork->getAttackSpeed() != 1 && troll->getAttackSpeed() != 1)
 	{
 		std::cout << "Neither make a fast attack on the other and instead look passionately into each others eyes" << std::endl;
 	}
@@ -193,7 +193,7 @@ void damageRound2(Character * ork, Character * troll)
 {
 	cout << "DAMAGE ROUND 2: NORMAL ATTACKS" << endl;
 
-	if (ork->attackSpeed == 2)
+	if (ork->getAttackSpeed() == 2)
 	{
 		int damage = ork->getDamage();
 		if (troll->getShieldType() == ork->getAttackType())
@@ -205,7 +205,7 @@ void damageRound2(Character * ork, Character * troll)
 		std::cout << "The ork makes it's attack on the Troll and deals " << damage << " damage." << std::endl;
 	}
 
-	if (troll->attackSpeed == 2)
+	if (troll->getAttackSpeed() == 2)
 	{
 		int damage = troll->getDamage();
 		if (ork->getShieldType() == troll->getAttackType())
@@ -217,7 +217,7 @@ void damageRound2(Character * ork, Character * troll)
 		std::cout << "The Troll makes it's attack on the ork and deals " << damage << " damage." << std::endl;
 	}
 
-	if (ork->attackSpeed != 2 && troll->attackSpeed != 2)
+	if (ork->getAttackSpeed() != 2 && troll->getAttackSpeed() != 2)
 	{
 		std::cout << "Neither make an attack on the other and instead look lovingly into each others eyes" << std::endl;
 	}
@@ -231,7 +231,7 @@ void damageRound3(Character * ork, Character * troll)
 {
 	cout << "DAMAGE ROUND 3: SLOW ATTACKS" << endl;
 
-	if (ork->attackSpeed == 3)
+	if (ork->getAttackSpeed() == 3)
 	{
 		int damage = ork->getDamage() * 1.25;
 		if (troll->getShieldType() == ork->getAttackType())
@@ -243,7 +243,7 @@ void damageRound3(Character * ork, Character * troll)
 		std::cout << "The ork makes it's attack on the Troll and deals " << damage << " damage." << std::endl;
 	}
 
-	if (troll->attackSpeed == 3)
+	if (troll->getAttackSpeed() == 3)
 	{
 		int damage = troll->getDamage() * 1.25;
 		if (ork->getShieldType() == troll->getAttackType())
@@ -255,7 +255,7 @@ void damageRound3(Character * ork, Character * troll)
 		std::cout << "The Troll makes it's attack on the ork and deals " << damage << " damage." << std::endl;
 	}
 
-	if (ork->attackSpeed != 3 && troll->attackSpeed != 3)
+	if (ork->getAttackSpeed() != 3 && troll->getAttackSpeed() != 3)
 	{
 		std::cout << "Neither make an attack on the other and instead look longfully into each others eyes" << std::endl;
 	}

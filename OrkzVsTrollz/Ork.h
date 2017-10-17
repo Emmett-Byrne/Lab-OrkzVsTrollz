@@ -17,7 +17,7 @@ public:
 
 Orc::Orc()
 {
-	baseDamage = 10;
-	health = 100;
-	isOrk = true;
+	m_baseDamage = 10;
+	m_health = 100;
+	m_isOrk = true;
 }

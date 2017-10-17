@@ -1,17 +1,14 @@
 #pragma once
+#include "Spell.h"
 
 class MagicMissile : public Spell
 {
 public:
 	MagicMissile();
-	virtual void doEffect(Character* c)
-	{
-		c->addHP(-40);
-	};
 };
 
 MagicMissile::MagicMissile()
 {
-	targetSelf = false;
-	cost = 35;
+	m_targetSelf = false;
+	m_cost = 35;
 }

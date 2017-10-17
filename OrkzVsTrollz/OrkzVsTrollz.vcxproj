@@ -113,6 +113,7 @@
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Spell.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />

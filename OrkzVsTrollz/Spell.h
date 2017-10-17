@@ -1,16 +1,14 @@
 #pragma once
 
+class Character;
+
 class Spell {
 public:
 	virtual bool doesTargetSelf();
 	virtual void doEffect(Character* c) = 0;
 
-	bool targetSelf;
-	int cost;
+	bool m_targetSelf;
+	int m_cost;
 };
 
-
-bool Spell::doesTargetSelf()
-{
-	return targetSelf;
-}
+#include "Character.h"
